@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--视频播放控制器-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_mediacontroller"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#771d201b"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp">
+
+    <ImageButton
+
+        android:id="@+id/ib_controller_playorpause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_controller_currenttime"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="00:00"
+        android:textColor="#fff" />
+
+    <SeekBar
+        android:id="@+id/sb_controller_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:paddingLeft="-6dp"
+        android:progressDrawable="@drawable/cus_seekbar"
+        android:thumb="@mipmap/progress_cur"
+        android:thumbOffset="0dp" />
+
+    <TextView
+        android:id="@+id/tv_controller_endtime"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="00:00"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/ib_controller_screen"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="@mipmap/ic_resize_tofullscreen" />
+</LinearLayout>
